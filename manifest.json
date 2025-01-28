@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "TDK Anlam Bulucu",
+  "version": "1.0",
+  "description": "Seçilen kelimenin cümle içindeki anlamını TDK sözlüğünden bulur",
+  "permissions": [
+    "activeTab",
+    "https://sozluk.gov.tr/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
